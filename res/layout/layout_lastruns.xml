@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_small">
+
+    <ListView
+            android:id="@+id/lvlastrunsEcon"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/bottombutts"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp">
+    </ListView>
+
+    <LinearLayout
+            android:id="@+id/bottombutts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+        <Button
+                android:id="@+id/bLastrunsBackEcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/button_startgrind"
+                android:text="@string/backtomenu"/>
+
+        <Button
+                android:id="@+id/bLastrunsClearEcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_startgrind"
+                android:text="@string/clear"/>
+    </LinearLayout>
+
+</RelativeLayout>

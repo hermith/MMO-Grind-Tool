@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/general"/>
+
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="onegame"
+            android:summary="@string/onegamemodesummary"
+            android:title="@string/onegamemode"/>
+
+    <EditTextPreference
+            android:enabled="false"
+            android:title="@string/game_name"
+            android:key="onegamename"/>
+
+    <PreferenceCategory android:title="@string/efficiency"/>
+
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="alwayssaveeffi"
+            android:title="@string/alwayssave"/>
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="alwaysremembereffi"
+            android:title="@string/alwaysremember"/>
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="alwayspercenteffi"
+            android:title="@string/alwayspercent"/>
+
+    <PreferenceCategory android:title="@string/economy"/>
+
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="alwayssaveecon"
+            android:title="@string/alwayssave"/>
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="alwaysrememberecon"
+            android:title="@string/alwaysremember"/>
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="neveritemsecon"
+            android:title="@string/neveritems"/>
+
+    <PreferenceCategory android:title="@string/about"></PreferenceCategory>
+
+    <Preference
+            android:key="totheplaystore"
+            android:summary="@string/aboutbody"/>
+
+</PreferenceScreen>

@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, EfficientGrinderStarting!</string>
+    <!-- Primary -->
     <string name="app_name">Efficient Grinder</string>
-    <string name="howtoExpPerMinute">Enter your current experience percentage or experience amount and hit the start key. Grind for a sufficient amount of time and hit stop.  Enter your experience when you are done and you\'ll get your per minute rating! Location and game are only necessary if you choose to save your results.\n\nTo view the last runs click the button next to this one.</string>
-    <string name="error">If you can read this an error has occured.</string>
-    <string name="howtoEconomy">Enter the items you want to track along with the vendor price and your current amount. Enter your current amount of money and hit start. Grind for a sufficent amount of time and enter your then current amount of each item.\n\nTo view your previous runs click the button right next to this one.</string>
+    <string name="efficiency">Efficiency</string>
+    <string name="economy">Economy</string>
+    <string name="timer">Timer</string>
+
+    <!-- Manifest -->
+    <string name="manieconlast">Economy: Last runs</string>
+    <string name="manieconcount">Economy: Countdown</string>
+    <string name="manieconres">Economy: Result</string>
+    <string name="manieffilast">Efficiency: Last runs</string>
+    <string name="maniefficount">Efficiency: Countdown</string>
+    <string name="manieffires">Efficiency: Result</string>
+    <string name="preferences">Preferences</string>
+
+    <!-- Numbers and simple -->
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="empty"></string>
+
+    <!-- Activity related -->
+    <string name="error">If you can read this an error has occurred.</string>
+    <string name="ingame_loc">In-game location</string>
+    <string name="game_name">Game name</string>
+    <string name="numitems">Items</string>
+    <string name="savetofile">Save</string>
+    <string name="rememberinfo">Remember</string>
+    <string name="currmoney">Current money</string>
+    <string name="currpercent">Current percentage</string>
+    <string name="currexp">Current experience</string>
+    <string name="amount">Amount</string>
+    <string name="effihint">%/exp</string>
+    <string name="itemname">Item name</string>
+    <string name="money">Money</string>
+    <string name="price">Price</string>
+    <string name="percent">Percentage</string>
+    <string name="experience">Experience</string>
+    <string name="start">Start grind</string>
+    <string name="okay">Okay</string>
+    <string name="showlastruns">Show last runs</string>
+    <string name="clear">Clear</string>
+    <string name="backtomenu">Back to menu</string>
+
+    <!-- Activity with : -->
+    <string name="location_">Location:</string>
+    <string name="game_">Game:</string>
+
+    <!-- Preferences -->
+    <string name="general">General</string>
+    <string name="onegamemode">One game mode</string>
+    <string name="onegamemodesummary">Always use one game, removes the "game name" field from game info.</string>
+    <string name="alwayssave">Always save</string>
+    <string name="alwaysremember">Always remember info</string>
+    <string name="neveritems">Never use items</string>
+    <string name="alwayspercent">Always use percentage</string>
+    <string name="about">About</string>
+    <string name="aboutbody">Remember to rate on Play Store! Leave comments with suggestions for new features. If you
+        find any bugs please report them to me at questions@hermith.net. Click here to go to the Play Store.
+    </string>
+
+    <!-- Divider -->
+    <string name="game_info">GAME INFO</string>
+    <string name="item_info">ITEM INFO</string>
+    <string name="expinfo">EXPERIENCE INFO</string>
+    <string name="quickopt">QUICK OPTIONS</string>
+
+    <!-- ActionBar -->
+    <string name="prevrunsecon">Previous runs: Economy</string>
+    <string name="prevrunseffi">Previous runs: Efficiency</string>
+    <string name="donegrinding">I\'m done grinding</string>
+    <string name="help">Help</string>
+    <string name="prevruns">Previous runs</string>
+    <string name="settings">Settings</string>
+    <string name="mainmenu">Menu</string>
+
+    <!-- IN Activity Strings -->
+    <string name="timersurecancel">Are you sure you want to exit? This will cancel your timers.</string>
+
+    <!-- Longer tips and howto -->
+    <string name="howtoExpPerMinute">Enter your current experience percentage or experience amount and hit the start
+        key. Grind for a sufficient amount of time and hit stop. Enter your experience when you are done and you\'ll get
+        your per minute rating! Location and game are only necessary if you choose to save your results.\n\nTo view the
+        last runs click the button next to this one.
+    </string>
+    <string name="howtoEconomy">Enter the items you want to track along with the vendor price and your current amount.
+        Enter your current amount of money and hit start. Grind for a sufficient amount of time and enter your then
+        current amount of each item.\n\nTo view your previous runs click the button right next to this one.
+    </string>
+    <string name="tip">Tip: The longer you grind the more accurate your result will be. 5 minutes should be sufficient
+        for a short term intensive test though
+    </string>
 
 </resources>

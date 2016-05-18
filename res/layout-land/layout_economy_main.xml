@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingTop="@dimen/padding_small">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/quickopts"
+            android:layout_below="@+id/tvsAnnotationsTop">
+
+        <RelativeLayout
+                android:id="@+id/economyMainEverything"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/game_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:paddingTop="5dip"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/game_info"
+                    android:textColor="@color/divider"/>
+
+            <View
+                    android:id="@+id/ll_divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_below="@+id/game_info"
+                    android:background="@color/divider"/>
+
+            <LinearLayout
+                    android:id="@+id/gameinput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_divider"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/etGameEcon"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:hint="@string/game_name"
+                        android:inputType="textShortMessage"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/locationinput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gameinput"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/etLocationEcon"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:hint="@string/ingame_loc"
+                        android:inputType="textShortMessage"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_divider2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/locationinput"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:paddingTop="5dip"
+                        android:text="@string/item_info"
+                        android:textColor="@color/divider"/>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:background="@color/divider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/tvsAnnotationsTop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_divider2"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/price"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/itemname"
+                        android:textColor="@android:color/black"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/amount"
+                        android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/groupFirstEcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvsAnnotationsTop"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                <EditText
+                        android:id="@+id/etOnePrice"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:inputType="number"/>
+
+                <EditText
+                        android:id="@+id/etOneName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:inputType="textShortMessage"/>
+
+                <EditText
+                        android:id="@+id/etOneAmount"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/groupSecondEcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/groupFirstEcon"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/etTwoPrice"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+
+                <EditText
+                        android:id="@+id/etTwoName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:inputType="textShortMessage"/>
+
+                <EditText
+                        android:id="@+id/etTwoAmount"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/groupThirdEcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/groupSecondEcon"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/etThreePrice"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+
+                <EditText
+                        android:id="@+id/etThreeName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:inputType="textShortMessage"/>
+
+                <EditText
+                        android:id="@+id/etThreeAmount"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tvWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/groupThirdEcon"
+                    android:textColor="@android:color/black"
+                    android:textSize="11dip"/>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_below="@+id/tvWarning"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <EditText
+                            android:id="@+id/etEconMoney"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/currmoney"
+                            android:inputType="number"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/ibEconStartGrind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_startgrind"
+                            android:contentDescription="@string/start"
+                            android:text="@string/start"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+            android:id="@+id/quickopts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/game_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@string/quickopt"
+                android:textColor="@color/divider"/>
+
+        <View
+                android:id="@+id/ll_divider3"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/divider"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+        </LinearLayout>
+
+        <RadioGroup
+                android:id="@+id/rgNumberofTypesEconomy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center"
+                    android:maxWidth="60dip"
+                    android:text="@string/numitems"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dip"/>
+
+            <RadioButton
+                    android:id="@+id/rbItemsOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/off"
+                    android:textColor="@android:color/black"/>
+
+            <RadioButton
+                    android:id="@+id/rbOneAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num1"
+                    android:textColor="@android:color/black"/>
+
+            <RadioButton
+                    android:id="@+id/rbTwoAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num2"
+                    android:textColor="@android:color/black"/>
+
+            <RadioButton
+                    android:id="@+id/rbThreeAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num3"
+                    android:textColor="@android:color/black"/>
+
+            <CheckBox
+                    android:id="@+id/cbRememberEconomy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rememberinfo"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dip"/>
+
+            <CheckBox
+                    android:id="@+id/cbSavetofileEconomy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/savetofile"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dip"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
