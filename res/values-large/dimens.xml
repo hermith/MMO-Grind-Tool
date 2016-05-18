@@ -1,7 +1,0 @@
-<resources>
-
-    <dimen name="padding_small">32dp</dimen>
-    <dimen name="padding_medium">32dp</dimen>
-    <dimen name="padding_large">32dp</dimen>
-
-</resources>
