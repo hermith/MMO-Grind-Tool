@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, EfficientGrinderStarting!</string>
+    <string name="app_name">Efficient Grinder</string>
+    <string name="howtoExpPerMinute">Enter your current experience percentage or experience amount and hit the start key. Grind for a sufficient amount of time and hit stop.  Enter your experience when you are done and you\'ll get your per minute rating! Location and game are only necessary if you choose to save your results.\n\nTo view the last runs click the button next to this one.</string>
+    <string name="error">If you can read this an error has occured.</string>
+    <string name="howtoEconomy">Enter the items you want to track along with the vendor price and your current amount. Enter your current amount of money and hit start. Grind for a sufficent amount of time and enter your then current amount of each item.\n\nTo view your previous runs click the button right next to this one.</string>
+
+</resources>

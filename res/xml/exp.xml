@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="game"
+        android:summary="Game"
+        android:title="Name of game" />
+
+    <EditTextPreference
+        android:key="location"
+        android:summary="Location"
+        android:title="In game location" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="savetofile"
+        android:summary="Save to file"
+        android:title="CheckBox" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="rememberlocandgame"
+        android:summary="Remember game and location name"
+        android:title="CheckBox" />
+
+    <EditTextPreference
+        android:key="radiobuttonchoice" />
+
+</PreferenceScreen>
